@@ -3,8 +3,6 @@ import './style.css';
 
 const API_URL = 'https://dragonball-api.com/api/characters?page=1&limit=100';
 
-// Convierte el Ki de la API en un número comparable.
-// No utiliza maxKi.
 function convertirKiAValor(ki) {
   if (ki === null || ki === undefined) return null;
 
@@ -42,7 +40,6 @@ function convertirKiAValor(ki) {
   return cantidad * magnitud;
 }
 
-// Escoge dos formas diferentes para la ronda.
 function crearRonda(formas) {
   if (!formas || formas.length < 2) return [];
 
@@ -102,8 +99,6 @@ function Juego() {
         pagina++;
       }
 
-      // Cada personaje se convierte en una forma base y,
-      // cuando existen, en sus transformaciones.
       const formasDisponibles = personajes.flatMap((personaje) => {
         const formasPersonaje = [
           {
@@ -134,7 +129,6 @@ function Juego() {
         return formasPersonaje;
       });
 
-      // Se excluyen formas sin imagen o sin un Ki comparable.
       const formasValidas = formasDisponibles
         .map((forma) => ({
           ...forma,
