@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+/* Contenedor principal */
+.personaje-detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px;
+  padding-bottom: 90px;
+  color: #FFFFFF;
+}
+
+/* Nombre del personaje */
+.personaje-detalle h1 {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 2px solid #80B4DB;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* Nombre de la transformación */
+.personaje-detalle p {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 2px solid #80B4DB;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Contenedor de transformaciones */
+.personaje-transformaciones {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.personaje-transformaciones h3 {
+  margin: 8px 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Lista horizontal de transformaciones */
+.personaje-lista-transformaciones {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+/* Botones de transformación */
+.transformacion-boton {
+  flex-shrink: 0;
+  padding: 10px 14px;
+  border: 2px solid #80B4DB;
+  border-radius: 0;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Transformación seleccionada */
+.transformacion-boton.activa {
+  border-color: #80B4DB;
+  background-color: #80B4DB;
+  color: #2D35A4;
+}
+
+/* Imagen del personaje */
+.personaje-imagen {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  min-height: 50vh;
+  max-width: 100%;
+  margin: 12px 0;
+  border: 2px solid #80B4DB;
+  background-color: rgba(45, 53, 164, 0.5);
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Información del personaje */
+.personaje-detalle > p {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #80B4DB;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+/* Botón de favoritos */
+.personaje-detalle > button {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin: 12px 0;
+  padding: 10px;
+  border: 2px solid #80B4DB;
+  border-radius: 0;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-size: 24px;
+}

@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/images/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.juego {
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px;
+  padding-bottom: 90px;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Encabezado */
+.juego-cabecera {
+  width: 100%;
+  text-align: center;
+}
+
+.juego-cabecera h2 {
+  margin: 8px 0 16px;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+/* Racha y récord */
+.juego-racha {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+
+
+.juego-racha span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Tarjetas de los personajes */
+.juego-personajes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.juego-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  min-height: 330px;
+  padding: 10px 6px;
+  border: 3px solid #80B4DB;
+  border-radius: 0;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.juego-tarjeta:disabled {
+  opacity: 1;
+}
+
+/* Nombre */
+.juego-nombre {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+/* Transformación */
+.juego-transformacion {
+  width: 100%;
+  min-height: 32px;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* Área de la imagen */
+.juego-imagen-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+  margin: 8px 0;
+}
+
+.juego-imagen {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ki */
+.juego-ki {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px 2px;
+  border: 2px solid #80B4DB;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+/* Respuesta correcta */
+.juego-tarjeta.juego-correcto {
+  border-color: #22C55E;
+  background-color: rgba(34, 197, 94, 0.35);
+}
+
+.juego-tarjeta.juego-correcto .juego-ki {
+  border-color: #22C55E;
+}
+
+/* Respuesta incorrecta */
+.juego-tarjeta.juego-incorrecto {
+  border-color: #EF4444;
+  background-color: rgba(239, 68, 68, 0.4);
+}
+
+.juego-tarjeta.juego-incorrecto .juego-ki {
+  border-color: #EF4444;
+}
+
+/* Estímulo de respuesta */
+.juego-estimulo {
+  width: 100%;
+  margin-top: 16px;
+  padding: 15px 10px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.juego-estimulo-verde {
+  border-color: #22C55E;
+  background-color: #15803D;
+}
+
+.juego-estimulo-rojo {
+  border-color: #EF4444;
+  background-color: #B91C1C;
+}
+
+/* Fin del juego */
+.juego-fin {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.juego-fin p {
+  margin: 10px 0 16px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* Botón de reintentar */
+.juego-reintentar {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 16px auto;
+  padding: 14px 20px;
+  border: 2px solid #80B4DB;
+  border-radius: 0;
+  background-color: rgba(45, 53, 164, 0.5);
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* Carga y errores */
+.juego-mensaje {
+  padding: 30px 15px;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}

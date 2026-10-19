@@ -1,0 +1,38 @@
+body {
+  background-image: url('/images/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.info-pagina {
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px;
+  padding-bottom: 90px;
+  color: #295B73;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #295B73;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+}
+
+.info-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
